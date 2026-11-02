@@ -1,0 +1,8 @@
+C:\Users\usuario\source\repos\PM45DemoV03\PM45DemoV03\bin\Debug\PM45DemoV03.exe
+C:\Users\usuario\source\repos\PM45DemoV03\PM45DemoV03\bin\Debug\PM45DemoV03.pdb
+C:\Users\usuario\source\repos\PM45DemoV03\PM45DemoV03\bin\Debug\HoneywellPrinter.dll
+C:\Users\usuario\source\repos\PM45DemoV03\PM45DemoV03\obj\Debug\PM45DemoV03.csproj.AssemblyReference.cache
+C:\Users\usuario\source\repos\PM45DemoV03\PM45DemoV03\obj\Debug\PM45DemoV03.csproj.CoreCompileInputs.cache
+C:\Users\usuario\source\repos\PM45DemoV03\PM45DemoV03\obj\Debug\PM45Demo.33378F35.Up2Date
+C:\Users\usuario\source\repos\PM45DemoV03\PM45DemoV03\obj\Debug\PM45DemoV03.exe
+C:\Users\usuario\source\repos\PM45DemoV03\PM45DemoV03\obj\Debug\PM45DemoV03.pdb

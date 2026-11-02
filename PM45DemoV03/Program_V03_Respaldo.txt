@@ -1,0 +1,70 @@
+﻿
+using System;
+using Honeywell.Printer;
+
+namespace PM45DemoV03
+{
+    internal class Program
+    {
+        static UI.Canvas canvas;
+
+        static int Main(string[] args)
+        {
+            try
+            {
+                Console.WriteLine("PM45DemoV03 - Iniciando interfaz");
+
+                canvas = new UI.Canvas();
+
+                if (!canvas.HasDisplay)
+                {
+                    Console.WriteLine("No se detecto pantalla");
+                    canvas.Dispose();
+                    return 1;
+                }
+
+                Console.WriteLine("Pantalla: {0} x {1}",
+                    canvas.Width, canvas.Height);
+
+                Console.WriteLine("Pantalla tactil: " + canvas.HasTouch);
+
+                Color fondo = new Color(20, 32, 48, 255);
+                Color blanco = new Color(255, 255, 255, 255);
+                Color azul = new Color(20, 120, 200, 255);
+                Color gris = new Color(85, 100, 115, 255);
+
+                canvas += new UI.Canvas.Rectangle(
+                    0, 0, canvas.Width, canvas.Height, fondo);
+
+                canvas += new UI.Canvas.Text(
+                    20, 30, "PM45 - DEMO", "Univers", 22, blanco);
+
+                canvas += new UI.Canvas.Text(
+                    20, 85, "Programa iniciado", "Univers", 16, blanco);
+
+                canvas += new UI.Canvas.Rectangle(
+                    20, 145, canvas.Width - 40, 55, azul);
+
+                canvas += new UI.Canvas.Text(
+                    65, 160, "IMPRIMIR", "Univers", 20, blanco);
+
+                canvas += new UI.Canvas.Rectangle(
+                    20, 225, canvas.Width - 40, 55, gris);
+
+                canvas += new UI.Canvas.Text(
+                    90, 240, "SALIR", "Univers", 20, blanco);
+
+                Console.WriteLine("Interfaz creada");
+                canvas.Run();
+
+                canvas.Dispose();
+                return 0;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return 1;
+            }
+        }
+    }
+}
